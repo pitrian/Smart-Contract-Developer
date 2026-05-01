@@ -1,70 +1,54 @@
-# 🛡️ Smart Contract Development & Security Portfolio
+🛡️ Smart Contract Development & Security Portfolio
+Chào mừng bạn đến với kho lưu trữ lộ trình phát triển Smart Contract của tôi. Đây là nơi tôi tổng hợp các dự án thực tế, tập trung tối đa vào tính an toàn, hiệu quả và khả năng bảo mật trên các nền tảng blockchain (EVM & Solana).
 
-Chào mừng bạn đến với kho lưu trữ lộ trình phát triển Smart Contract của tôi. Repo này không chỉ là nơi lưu trữ code, mà là bằng chứng về quá trình học tập, rèn luyện tư duy lập trình chặt chẽ và kỹ năng kiểm thử bảo mật trên nền tảng Ethereum.
+👨‍💻 Về tôi
+Tôi là Ngô Minh Chung, một Junior Blockchain Developer đang trên hành trình trở thành Smart Contract Security Auditor. Phương châm làm việc của tôi là: "Viết code không chỉ để chạy, mà để không thể bị tấn công".
 
-## 👤 Thông tin cá nhân
-* **Họ và tên:** Ngô Minh Chung
-* **Vị trí mục tiêu:** Smart Contract Developer Intern / Blockchain Security Auditor
-* **Công nghệ trọng tâm:** Solidity, Hardhat v3, TypeScript, OpenZeppelin.
+Vị trí hiện tại: Blockchain Developer Intern tại Apps Cyclone.
 
----
+Kỹ năng trọng tâm: Solidity, Foundry, Hardhat, Smart Contract Audit (Code4rena, Sherlock).
 
-## 🚀 Danh sách dự án (Learning Roadmap)
+Mục tiêu 2026: Hoàn thành marathon và đạt vị thế Auditor uy tín trong cộng đồng Web3.
 
-### 1. Workshop 01: Counter Foundation (`/workshop_01`)
-* **Mô tả:** Dự án thực hành cấu hình Hardhat v3 chuẩn chuyên nghiệp.
-* **Kỹ thuật:** TypeScript, Hardhat Ignition, Ethers.js.
-* **Security:** Áp dụng Unit Testing chặt chẽ cho từng hàm thay đổi trạng thái (state).
+🚀 Các dự án nổi bật
+1. 🏦 Decentralized Savings Protocol (Staking DeFi)
+Thư mục: /Crypto-Bank-Smart-Contract
 
-### 2. Crypto Bank Smart Contract (`/Crypto-Bank-Smart-Contract`)
-* **Mô tả:** Hệ thống ngân hàng phi tập trung cơ bản (Deposit/Withdraw ETH).
-* **Kỹ thuật:** Mapping, Global Variables (`msg.sender`, `msg.value`), Access Control.
-* **Security:** Kiểm soát lỗi logic rút tiền và xử lý lỗi bằng `require` string.
+Mô tả: Một giao thức gửi tiết kiệm phi tập trung cho phép người dùng staking tài sản để nhận lãi suất.
 
-### 3. ERC20 Token & Advanced Features (Đang phát triển)
-* **Mô tả:** Triển khai Token theo chuẩn OpenZeppelin với các tính năng mở rộng.
-* **Kỹ thuật:** Inheritance (Kế thừa), Minting, Burning.
+Kỹ thuật:
 
----
+Cơ chế Vault-based truyền thống.
 
-## 🛠️ Kỹ năng chuyên môn (Tech Stack)
+Tối ưu hóa phí Gas và chống các lỗi logic cơ bản trong DeFi.
 
-| Lĩnh vực | Công cụ & Ngôn ngữ |
-| :--- | :--- |
-| **Blockchain** | Solidity, Ethereum, Sepolia Testnet |
-| **Framework** | Hardhat v3, Foundry (Researching) |
-| **Languages** | TypeScript, JavaScript, Rust (Beginner) |
-| **Tools** | Alchemy RPC, Etherscan API, Dotenv |
+Sử dụng OpenZeppelin standards.
 
----
+2. 🎨 NFT Collection ERC-721
+Thư mục: /NFT_721
 
-## 📖 Hướng dẫn cài đặt & Chạy dự án
+Mô tả: Bộ sưu tập NFT chuẩn ERC-721 với các tính năng nâng cao như Scheduled Drop và Post-mint reveal.
 
-Để kiểm tra code và chạy thử các bài test, vui lòng làm theo các bước sau:
+Điểm nhấn: Tích hợp quy trình mint an toàn, quản lý whitelist và Metadata phi tập trung.
 
-1. **Clone repo:**
-   ```bash
-   git clone [https://github.com/pitrian/Smart-Contract-Developer.git](https://github.com/pitrian/Smart-Contract-Developer.git)
-   
-2. Cài đặt môi trường (Ví dụ cho Workshop 01):
-  Bash
-  cd workshop_01
-  npm install
+3. 🪙 ERC-20 Token Workshop
+Thư mục: /workshop_01
 
-3. Cấu hình biến môi trường:
-Tạo file .env từ mẫu .env.example và điền PRIVATE_KEY của bạn.
+Mô tả: Dự án thực hành nền tảng về tiêu chuẩn token ERC-20, bao gồm các cơ chế Burn, Mint và Access Control.
 
-4. Biên dịch và Kiểm thử:
+🔍 Định hướng Security & Audit
+Tôi đang liên tục trau dồi kỹ năng bảo mật thông qua:
 
-Bash
-npx hardhat compile
-npx hardhat test
--------------------
-🛡️ Tư duy bảo mật (Security Mindset)
-Trong vai trò là một người hướng tới Security Auditor, tôi cam kết:
+Ethernaut & CTF: Giải quyết các thử thách lỗ hổng bảo mật để hiểu rõ cách thức tấn công Reentrancy, Overflow, Logic Errors...
 
-Zero-Leak Policy: Luôn quản lý Private Key qua biến môi trường, không bao giờ push lên Git.
+Công cụ sử dụng: Foundry (Testing), Slither, Echidna.
 
-Test-Driven Development: Viết test trước hoặc song song khi viết code để đảm bảo logic không kẽ hở.
+Nghiên cứu: Phân tích các báo cáo Audit từ các dự án lớn trên Sherlock và Code4rena.
 
-Gas Optimization: Luôn cân nhắc việc tối ưu hóa code để giảm chi phí giao dịch cho người dùng.
+📬 Liên hệ
+Twitter: C-X Chain
+@ng131261
+
+LinkedIn: Ngô Minh Chung
+
+© 2026 (Mr Chung). Hướng tới một hệ sinh thái Web3 an toàn hơn.
